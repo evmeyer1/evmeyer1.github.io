@@ -23,21 +23,42 @@
 
       
       
-      <body>
-   <div id="banner" style="overflow: hidden; display: inline-block;">
-        <div class="image" style="max-width: 20%; max-height: 20%;">
-            <img src ="https://user-images.githubusercontent.com/55659935/77815521-35e5a500-7092-11ea-9666-b4ec5ecadad9.jpeg">
-        </div>
+      * {
+  box-sizing: border-box;
+}
 
-        <div class="image" style="max-width: 100%; max-height: 100%;">
-            <img src ="https://user-images.githubusercontent.com/55659935/77815521-35e5a500-7092-11ea-9666-b4ec5ecadad9.jpeg">
-        </div>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
-        <div class="image" style="max-width: 20%; max-height: 20%;">
-            <img src ="https://user-images.githubusercontent.com/55659935/77815521-35e5a500-7092-11ea-9666-b4ec5ecadad9.jpeg">
-        </div>
-    </div>
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
 
+<h2>Images Side by Side</h2>
+<p>How to create side-by-side images with the CSS float property:</p>
 
-    </body>
+<div class="row">
+  <div class="column">
+    <img src="https://user-images.githubusercontent.com/55659935/77815521-35e5a500-7092-11ea-9666-b4ec5ecadad9.jpeg" alt="Snow" style="width:25%">
+  </div>
+  <div class="column">
+    <img src="https://user-images.githubusercontent.com/55659935/77815521-35e5a500-7092-11ea-9666-b4ec5ecadad9.jpeg" alt="Forest" style="width:25%">
+  </div>
+  <div class="column">
+    <img src="https://user-images.githubusercontent.com/55659935/77815521-35e5a500-7092-11ea-9666-b4ec5ecadad9.jpeg" alt="Mountains" style="width:25%">
+  </div>
+</div>
+
+</body>
 </html>
+
+
