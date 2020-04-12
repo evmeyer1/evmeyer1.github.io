@@ -79,124 +79,108 @@ div.desc {
     
     
     
-       <html>
-<head>
+  <!DOCTYPE html>
+<html>
 <style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+* {
+  box-sizing: border-box;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+body {
+  margin: 0;
+  font-family: Arial;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
+.header {
   text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 </style>
-</head>
 <body>
 
-<div class="gallery">
-  <a target="_blank" href="https://www.sleepingbeardunes.com">
-    <img src="https://user-images.githubusercontent.com/55659935/79035907-ca6efd80-7b90-11ea-8362-07c4368e4658.jpeg"  width="700" height="500">
-  </a>
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://www.serengetiparktanzania.com/information/the-serengeti-plains/">
-    <img src="https://user-images.githubusercontent.com/55659935/79035775-9810d080-7b8f-11ea-8214-167933c83ab7.jpeg"  width="600" height="400">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="https://en.wikipedia.org/wiki/East_Lansing,_Michigan">
-    <img src="https://user-images.githubusercontent.com/55659935/79035737-5718bc00-7b8f-11ea-9c5c-3b6998d43c2c.jpeg"  width="700" height="500">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="">
-    <img src="https://user-images.githubusercontent.com/55659935/79035717-32244900-7b8f-11ea-88bf-1112e8ef8dbd.jpeg"  width="600" height="400">
-  </a>
-</div>
-  
-  <div class="gallery">
-  <a target="_blank" href="https://www.cnbc.com/2019/09/22/warren-buffetts-investing-advice-consistent-over-past-35-years.html">
-    <img src="https://user-images.githubusercontent.com/55659935/79035701-14ef7a80-7b8f-11ea-9240-5defce33905c.jpeg"  width="600" height="400">
-  </a>
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
 </div>
 
 </body>
 </html>
-    
-       <html>
-<head>
-<style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-</style>
-</head>
-<body>
-
-<div class="gallery">
-  <a target="_blank" href="https://www.sleepingbeardunes.com">
-    <img src="https://user-images.githubusercontent.com/55659935/79035907-ca6efd80-7b90-11ea-8362-07c4368e4658.jpeg"  width="700" height="500">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="https://www.serengetiparktanzania.com/information/the-serengeti-plains/">
-    <img src="https://user-images.githubusercontent.com/55659935/79035775-9810d080-7b8f-11ea-8214-167933c83ab7.jpeg"  width="600" height="400">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="https://en.wikipedia.org/wiki/East_Lansing,_Michigan">
-    <img src="https://user-images.githubusercontent.com/55659935/79035737-5718bc00-7b8f-11ea-9c5c-3b6998d43c2c.jpeg"  width="700" height="500">
-  </a>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="">
-    <img src="https://user-images.githubusercontent.com/55659935/79035717-32244900-7b8f-11ea-88bf-1112e8ef8dbd.jpeg"  width="600" height="400">
-  </a>
-</div>
-  
-  <div class="gallery">
-  <a target="_blank" href="https://www.cnbc.com/2019/09/22/warren-buffetts-investing-advice-consistent-over-past-35-years.html">
-    <img src="https://user-images.githubusercontent.com/55659935/79035701-14ef7a80-7b8f-11ea-9240-5defce33905c.jpeg"  width="600" height="400">
-  </a>
-</div>
-
-</body>
-</html>
-      
- 
