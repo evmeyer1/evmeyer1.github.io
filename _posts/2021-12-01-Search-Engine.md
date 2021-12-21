@@ -7,6 +7,6 @@ date: 2021-10-01
      class="center" style="width:400px;height:6=480px;" border="0">
 
 Built scalable search engine that uses indexing implemeting with MapReduce so it can scale to very large corpus sizes, using Python, HTML, Jinja Templates and Hadoop
-Utilized ranking on TF-IDF and PageRank Scores and User Interface with tunable weights
+Utilized ranking on TF-IDF and PageRank Scores and User Interface with tunable weights.
                         
                         
